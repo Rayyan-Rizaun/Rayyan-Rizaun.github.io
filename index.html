@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rayyan Rizaun — Developer & Aspiring Data Scientist</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bgdark: '#0e0f12',
+                        carddark: '#15171c',
+                        borderdark: '#222630',
+                        accentgreen: '#10b981',
+                        accentcyan: '#38bdf8'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'Fira Code', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-bgdark text-gray-200 font-sans antialiased selection:bg-emerald-500 selection:text-black">
+
+    <!-- Fixed Header Navigation -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-bgdark/90 backdrop-blur-md border-b border-borderdark">
+        <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="font-mono font-bold text-base tracking-tight text-white flex items-center gap-2">
+                <span class="text-accentgreen">&gt;</span> rayyan_rizaun<span class="animate-pulse text-accentgreen">_</span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-6 text-xs font-mono text-gray-400">
+                <a href="#about" class="hover:text-emerald-400 transition">about</a>
+                <a href="#skills" class="hover:text-emerald-400 transition">skills</a>
+                <a href="#projects" class="hover:text-emerald-400 transition">projects</a>
+                <a href="#education" class="hover:text-emerald-400 transition">education</a>
+                <a href="#contact" class="hover:text-emerald-400 transition">contact</a>
+            </nav>
+            <a href="https://github.com/Rayyan-Rizaun" target="_blank" class="text-xs font-mono px-3 py-1.5 border border-borderdark bg-carddark rounded hover:border-emerald-500 hover:text-emerald-400 transition flex items-center gap-1.5">
+                <i data-lucide="github" class="w-3.5 h-3.5"></i> GitHub
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="max-w-4xl mx-auto px-6 pt-28 pb-20 space-y-24">
+
+        <!-- Hero / Intro Section -->
+        <section class="pt-6 space-y-8">
+            <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+                <div class="space-y-4 max-w-xl">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-xs font-mono text-emerald-400">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span> SLIIT Year 2 · Data Science Specialization
+                    </div>
+                    <h1 class="text-3xl md:text-5xl font-bold tracking-tight text-white">
+                        Rayyan Rizaun
+                    </h1>
+                    <p class="text-lg text-emerald-400 font-mono">
+                        Aspiring Data Scientist | Software Developer | Data & AI Enthusiast
+                    </p>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        I enjoy building practical software applications, exploring machine learning models, working with large-scale data systems, and creating digital content.
+                    </p>
+                    <div class="flex flex-wrap items-center gap-3 pt-2">
+                        <a href="#projects" class="px-4 py-2 bg-emerald-500 hover:bg-emerald-600 text-black font-semibold text-xs font-mono rounded transition flex items-center gap-2">
+                            View Projects <i data-lucide="arrow-down" class="w-3.5 h-3.5"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/rayyan-rizaun-a70704382/" target="_blank" class="px-4 py-2 border border-borderdark bg-carddark hover:border-gray-500 text-xs font-mono rounded transition flex items-center gap-2">
+                            <i data-lucide="linkedin" class="w-3.5 h-3.5 text-blue-400"></i> LinkedIn ↗
+                        </a>
+                    </div>
+                </div>
+
+                <!-- User Image Card -->
+                <div class="relative shrink-0 group">
+                    <div class="w-48 h-56 md:w-56 md:h-64 rounded-xl overflow-hidden border border-borderdark bg-carddark shadow-2xl relative z-10">
+                        <img src="ChatGPT Image Sep 16, 2026, 09_20_07 AM.png" alt="Rayyan Rizaun" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-500">
+                    </div>
+                    <div class="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-xl blur opacity-20 group-hover:opacity-40 transition duration-500"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 01 — Who I Am -->
+        <section id="about" class="space-y-6 pt-8 border-t border-borderdark">
+            <div class="font-mono text-xs text-emerald-400 uppercase tracking-widest flex items-center gap-2">
+                <span>01 — who i am</span>
+            </div>
+            <div class="p-6 bg-carddark border border-borderdark rounded-lg space-y-4 text-sm text-gray-300 leading-relaxed">
+                <p>
+                    I’m <strong class="text-white">Rayyan Rizaun</strong>, a Year 2, Semester 1 undergraduate at <span class="text-emerald-400">SLIIT (Sri Lanka Institute of Information Technology)</span>, pursuing a BSc (Hons) in Information Technology specializing in Data Science.
+                </p>
+                <p>
+                    I’m a developer with big dreams and a strong interest in <span class="text-white">Data Science, Data Analytics, Data Engineering, AI, Software Engineering, and Web Development</span>. I enjoy building practical applications, working with data, developing web solutions, and creating digital media content.
+                </p>
+                <p>
+                    My ultimate goal is to become a <strong class="text-emerald-400">Data Scientist</strong> and eventually work with large-scale data systems and AI technologies, while continuing to grow as a versatile technology professional.
+                </p>
+            </div>
+        </section>
+
+        <!-- 02 — Skills -->
+        <section id="skills" class="space-y-6 pt-8 border-t border-borderdark">
+            <div class="font-mono text-xs text-emerald-400 uppercase tracking-widest">
+                02 — skills
+            </div>
+            <h2 class="text-lg font-semibold text-white">What I Work With</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs font-mono">
+                <!-- Languages -->
+                <div class="p-5 bg-carddark border border-borderdark rounded-lg space-y-3">
+                    <div class="text-gray-400 font-bold uppercase tracking-wider text-[11px] flex items-center gap-2">
+                        <i data-lucide="code" class="w-4 h-4 text-emerald-400"></i> Languages
+                    </div>
+                    <div class="flex flex-wrap gap-2 text-gray-200">
+                        <span class="px-2.5 py-1 bg-bgdark border border-borderdark rounded">☕ Java</span>
+                        <span class="px-2.5 py-1 bg-bgdark border border-borderdark rounded">🐍 Python</span>
+                        <span class="px-2.5 py-1 bg-bgdark border border-borderdark rounded">🌐 JavaScript</span>
+                        <span class="px-2.5 py-1 bg-bgdark border border-borderdark rounded">🎨 HTML5 / CSS3</span>
+                        <span class="px-2.5 py-1 bg-bgdark border border-borderdark rounded">🗄️ SQL / MSSQL</span>
+                    </div>
+                </div>
+
+                <!-- Frameworks & Technologies -->
+                <div class="p-5 bg-carddark border border-borderdark rounded-lg space-y-3">
+                    <div class="text-gray-400 font-bold uppercase tracking-wider text-[11px] flex items-center gap-2">
+                        <i data-lucide="layers" class="w-4 h-4 text-emerald-400"></i> Frameworks & Tech
+                    </div>
+                    <div class="flex flex-wrap gap-2 text-gray-200">
+                        <span class="px-2.5 py-1 bg-bgdark border border-borderdark rounded">🍃 Spring Boot</span>
+                        <span class="px-2.5 py-1 bg-bgdark border border-borderdark rounded">⚛️ React</span>
+                        <span class="px-2.5 py-1 bg-bgdark border border-borderdark rounded">🟢 Node.js</span>
+                        <span class="px-2.5 py-1 bg-bgdark border border-borderdark rounded">💾 MS SQL Server</span>
+                        <span class="px-2.5 py-1 bg-bgdark border border-borderdark rounded">🐙 Git & GitHub</span>
+                    </div>
+                </div>
+
+                <!-- Data Science & Analytics -->
+                <div class="p-5 bg-carddark border border-borderdark rounded-lg space-y-3">
+                    <div class="text-gray-400 font-bold uppercase tracking-wider text-[11px] flex items-center gap-2">
+                        <i data-lucide="bar-chart-3" class="w-4 h-4 text-emerald-400"></i> Data Science & Analytics
+                    </div>
+                    <div class="flex flex-wrap gap-2 text-gray-200">
+                        <span class="px-2.5 py-1 bg-bgdark border border-borderdark rounded">🐼 Pandas</span>
+                        <span class="px-2.5 py-1 bg-bgdark border border-borderdark rounded">🔢 NumPy</span>
+                        <span class="px-2.5 py-1 bg-bgdark border border-borderdark rounded">📊 Matplotlib / Seaborn</span>
+                        <span class="px-2.5 py-1 bg-bgdark border border-borderdark rounded">🤖 Scikit-learn</span>
+                        <span class="px-2.5 py-1 bg-bgdark border border-borderdark rounded">📈 MS Excel</span>
+                    </div>
+                </div>
+
+                <!-- Tools & Environments -->
+                <div class="p-5 bg-carddark border border-borderdark rounded-lg space-y-3">
+                    <div class="text-gray-400 font-bold uppercase tracking-wider text-[11px] flex items-center gap-2">
+                        <i data-lucide="wrench" class="w-4 h-4 text-emerald-400"></i> Development Tools
+                    </div>
+                    <div class="flex flex-wrap gap-2 text-gray-200">
+                        <span class="px-2.5 py-1 bg-bgdark border border-borderdark rounded">⚡ VS Code</span>
+                        <span class="px-2.5 py-1 bg-bgdark border border-borderdark rounded">💡 IntelliJ IDEA</span>
+                        <span class="px-2.5 py-1 bg-bgdark border border-borderdark rounded">🪐 Jupyter Notebook</span>
+                        <span class="px-2.5 py-1 bg-bgdark border border-borderdark rounded">📊 RStudio</span>
+                        <span class="px-2.5 py-1 bg-bgdark border border-borderdark rounded">⚙️ GNU Octave / Wokwi</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 03 — Projects -->
+        <section id="projects" class="space-y-6 pt-8 border-t border-borderdark">
+            <div class="font-mono text-xs text-emerald-400 uppercase tracking-widest">
+                03 — projects
+            </div>
+            <h2 class="text-lg font-semibold text-white">Things I've Built</h2>
+
+            <div class="space-y-6">
+                <!-- Project 1 -->
+                <div class="p-6 bg-carddark border border-borderdark rounded-lg space-y-4 hover:border-emerald-500/50 transition">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
+                        <div class="flex items-center gap-2">
+                            <span class="text-xs font-mono px-2 py-0.5 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded">Individual Project</span>
+                            <h3 class="text-base font-bold text-white">🚲 Bike Ride & Share Web Application</h3>
+                        </div>
+                        <a href="https://github.com/Rayyan-Rizaun" target="_blank" class="text-xs font-mono text-gray-400 hover:text-white flex items-center gap-1">
+                            GitHub →
+                        </a>
+                    </div>
+                    <p class="text-xs text-gray-300 leading-relaxed">
+                        Developed an individual web-based Bike Ride & Share application designed to provide users with a simple and convenient platform for managing ride-sharing activities. Responsible for full-stack architecture including user management, ride creation, booking, frontend layout, and RESTful API backends.
+                    </p>
+                    <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-gray-400">
+                        <span class="px-2 py-0.5 bg-bgdark border border-borderdark rounded">Java</span>
+                        <span class="px-2 py-0.5 bg-bgdark border border-borderdark rounded">Spring Boot</span>
+                        <span class="px-2 py-0.5 bg-bgdark border border-borderdark rounded">React</span>
+                        <span class="px-2 py-0.5 bg-bgdark border border-borderdark rounded">MSSQL</span>
+                        <span class="px-2 py-0.5 bg-bgdark border border-borderdark rounded">HTML/CSS</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="p-6 bg-carddark border border-borderdark rounded-lg space-y-4 hover:border-emerald-500/50 transition">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
+                        <div class="flex items-center gap-2">
+                            <span class="text-xs font-mono px-2 py-0.5 bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 rounded">Group Project — SLIIT</span>
+                            <h3 class="text-base font-bold text-white">📚 Web-Based Library Management System</h3>
+                        </div>
+                        <a href="https://github.com/Rayyan-Rizaun" target="_blank" class="text-xs font-mono text-gray-400 hover:text-white flex items-center gap-1">
+                            GitHub →
+                        </a>
+                    </div>
+                    <p class="text-xs text-gray-300 leading-relaxed">
+                        A web-based library management system built to digitize and simplify university library operations. Features book cataloging, borrowing/returns, fine appeals, reports, and reviews. My contribution was leading the <strong>User & Access Management</strong> module for secure account provisioning and access control.
+                    </p>
+                    <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-gray-400">
+                        <span class="px-2 py-0.5 bg-bgdark border border-borderdark rounded">Java</span>
+                        <span class="px-2 py-0.5 bg-bgdark border border-borderdark rounded">Spring Boot</span>
+                        <span class="px-2 py-0.5 bg-bgdark border border-borderdark rounded">React</span>
+                        <span class="px-2 py-0.5 bg-bgdark border border-borderdark rounded">MSSQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Freelance & Practical Services Sub-section -->
+            <div class="pt-4 space-y-4">
+                <h3 class="text-sm font-semibold text-gray-300 font-mono">// Freelance & Practical Experience</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                    <div class="p-4 bg-carddark border border-borderdark rounded space-y-2">
+                        <div class="font-bold text-white flex items-center gap-2">🌐 Freelance Web Development</div>
+                        <p class="text-gray-400">Custom web applications built with modern frontend frameworks, backend integration, and database setup.</p>
+                    </div>
+                    <div class="p-4 bg-carddark border border-borderdark rounded space-y-2">
+                        <div class="font-bold text-white flex items-center gap-2">🎬 Video Editing & Content Creation</div>
+                        <p class="text-gray-400">Editing digital videos for clients and social channels, blending creative storytelling with technical skills.</p>
+                    </div>
+                    <div class="p-4 bg-carddark border border-borderdark rounded space-y-2">
+                        <div class="font-bold text-white flex items-center gap-2">📱 Social Media Management</div>
+                        <p class="text-gray-400">Managing digital assets, content schedules, and online presence across social platforms.</p>
+                    </div>
+                    <div class="p-4 bg-carddark border border-borderdark rounded space-y-2">
+                        <div class="font-bold text-white flex items-center gap-2">💻 IT & Technical Support</div>
+                        <p class="text-gray-400">Hardware and software troubleshooting, computer setup, and system assistance for personal projects.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 04 — Education -->
+        <section id="education" class="space-y-6 pt-8 border-t border-borderdark">
+            <div class="font-mono text-xs text-emerald-400 uppercase tracking-widest">
+                04 — education
+            </div>
+            <h2 class="text-lg font-semibold text-white">Where I'm Learning</h2>
+
+            <div class="p-6 bg-carddark border border-borderdark rounded-lg space-y-2">
+                <div class="flex flex-col md:flex-row md:items-center justify-between font-mono text-xs text-emerald-400">
+                    <span>2024 — Present</span>
+                    <span>Year 2 · Semester 1</span>
+                </div>
+                <h3 class="text-base font-bold text-white">BSc (Hons) in Information Technology</h3>
+                <p class="text-xs text-gray-300 font-mono">Specialization: Data Science</p>
+                <p class="text-xs text-gray-400 pt-2">Sri Lanka Institute of Information Technology (SLIIT)</p>
+            </div>
+        </section>
+
+        <!-- 05 — Contact -->
+        <section id="contact" class="space-y-6 pt-8 border-t border-borderdark">
+            <div class="font-mono text-xs text-emerald-400 uppercase tracking-widest">
+                05 — contact
+            </div>
+            <div class="p-8 bg-carddark border border-borderdark rounded-lg space-y-6 text-center">
+                <h2 class="text-2xl font-bold text-white">Let's Connect & Build Together</h2>
+                <p class="text-xs text-gray-400 max-w-md mx-auto leading-relaxed">
+                    I'm open to software development opportunities, data engineering/analytics internships, and freelance tech projects.
+                </p>
+                
+                <div class="flex flex-wrap justify-center gap-4 pt-2 font-mono text-xs">
+                    <a href="https://www.linkedin.com/in/rayyan-rizaun-a70704382/" target="_blank" class="px-4 py-2.5 bg-bgdark border border-borderdark rounded hover:border-emerald-500 hover:text-emerald-400 transition flex items-center gap-2">
+                        <i data-lucide="linkedin" class="w-4 h-4 text-blue-400"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/Rayyan-Rizaun" target="_blank" class="px-4 py-2.5 bg-bgdark border border-borderdark rounded hover:border-emerald-500 hover:text-emerald-400 transition flex items-center gap-2">
+                        <i data-lucide="github" class="w-4 h-4 text-gray-300"></i> GitHub
+                    </a>
+                    <a href="http://www.youtube.com/@RayyanRizaun" target="_blank" class="px-4 py-2.5 bg-bgdark border border-borderdark rounded hover:border-emerald-500 hover:text-emerald-400 transition flex items-center gap-2">
+                        <i data-lucide="youtube" class="w-4 h-4 text-red-500"></i> YouTube
+                    </a>
+                    <a href="https://www.instagram.com/rayyan_rizaun/" target="_blank" class="px-4 py-2.5 bg-bgdark border border-borderdark rounded hover:border-emerald-500 hover:text-emerald-400 transition flex items-center gap-2">
+                        <i data-lucide="instagram" class="w-4 h-4 text-pink-400"></i> Instagram
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-borderdark py-8 text-center text-xs font-mono text-gray-500">
+        <p>© 2026 Rayyan Rizaun. Built with HTML & Tailwind CSS.</p>
+    </footer>
+
+    <!-- Lucide Icon Renderer -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
